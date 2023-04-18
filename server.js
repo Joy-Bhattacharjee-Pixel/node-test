@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 // Importing db details
 
 // Dummy checking
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
     res.json({ message: "Welcome to Inboxx Application" });
 });
 
