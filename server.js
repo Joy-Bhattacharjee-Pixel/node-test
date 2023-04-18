@@ -8,13 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 // Importing db details
 
 // Dummy checking
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
     res.json({ message: "Welcome to Inboxx Application" });
 });
 
-app.get("/home", (req, res) => {
-    res.json({ message: "Welcome to Inboxx Application" });
-});
 
 // Defining port
 const PORT = process.env.PORT || 8081;
