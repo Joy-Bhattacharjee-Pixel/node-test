@@ -12,6 +12,10 @@ app.get("/test", (req, res) => {
     res.json({ message: "Welcome to Inboxx Application" });
 });
 
+app.get("/home", (req, res) => {
+    res.json({ message: "Welcome to Inboxx Application" });
+});
+
 // Defining port
 const PORT = process.env.PORT || 8081;
 // Listenning to port
