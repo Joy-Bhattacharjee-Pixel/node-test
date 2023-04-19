@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-
+const cors = require('cors');
+app.use(cors());
 // This is required for parsing body from POST
 app.use(express.json());
 // Required for url encoding
